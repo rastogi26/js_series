@@ -1,5 +1,48 @@
-Var:- Not to use var because of issue in block scope and functional scope.
-let accountState; :- It gives undefined by default.
-"use strict";  :- treat all the code of js as newer version
+1. Var:- Not to use var because of issue in block scope and functional scope.
+2. let accountState; :- It gives undefined by default.
+3. "use strict";  :- treat all the code of js as newer version
+4. type of undefined = undefined
+5. type of null = object
 
+6. //conversion of __ into number (type always number but value changes)
+  
+  if null =>  value is 0
+  if string like "33abc", "dhruv" => value is NaN
+  if undefined => value is NaN
+  if true => 1 and false => 0
+
+7. // conversion of __ into bool  (type remains boolean but value changes)
+
+   if 1 => value is true (similarly of false => 0)
+   if "" => value is false
+   if "dhruv" => value is true
+
+8. The equality check == and comparison > < >= <= work different,  
+   hence comaprision convert null to number , treating it as 0
+   that why null>=0 is true and null == 0 is false
+
+9. === strict equality , also check the dataType "2"===2 (false)
+
+10. 2 types of dataTypeS :- 
+     
+    1. Primitive(send copy of variable) => 7 types :- String,boolean,number,symbol,null,undefined,bigInt
+
+    2. Non-Primitive(Reference) => Array, functions, objects
+                
+11. Memory 2 types:- (Fig1_Memory)
+  
+    1.Stack(Primitive)
+    2.Heap(Non-Primitive)   
+  
+12. Use new method called The string interpolation. `${}`
+    It is a great feature. It helps in inserting values into string literals. It makes code more readable and avoids clumsiness.
+
+13. //2nd way to initialize the string 
+         
+         const gameName= new String("dhruv");
+         gameName
+
+    It gives object.
+
+14.
 
