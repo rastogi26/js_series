@@ -44,5 +44,12 @@
 
     It gives object.
 
-14.
+14.console.log(balance.toFixed(2)); //precision value
+
+15. Generate random value between a range => 
+     
+    const min =10
+    const max = 20
+
+    console.log(Math.floor(Math.random()*(max-min+1))+min);
 
