@@ -53,6 +53,27 @@
 
     console.log(Math.floor(Math.random()*(max-min+1))+min);
 
-16. 
+16. Arrays in js always create Shallow Copies. 
+    
+   Shallow Copies of the object is a copy whose properties share the same references as those of the source object from which the copy was made.
+
+17. Deep copy of the object is a copy whose properties do not share the same references as those of the source object from which the copy was made.
+
+18. Slice and Splice Differece
+In slice it gives the defined range value 
+
+
+But in Splice the  ranged array is cut from array.
+
+A [0,1,2,3,4,5]
+slice(1,3)
+answer=> [1,2]
+
+B [0,1,2,3,4,5]
+splice(1,3)
+
+answer => B [0,4,5]
+          [1,2,3]
+
 
 
