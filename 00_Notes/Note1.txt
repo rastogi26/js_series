@@ -1,0 +1,5 @@
+Var:- Not to use var because of issue in block scope and functional scope.
+let accountState; :- It gives undefined by default.
+"use strict";  :- treat all the code of js as newer version
+
+
