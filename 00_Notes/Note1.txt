@@ -97,4 +97,21 @@ answer => B [0,4,5]
     2.console.log(Object.values(tinderUser));//gives array of values of object tinderUser
     3.console.log(Object.entries(tinderUser)); //gives array of key value  
 
+*****************************OBJECTS END***************************************
 
+*****************************Functions Start***************************************
+
+22. Rest operator in function  => helps to pass multiple values in a function. 
+    
+    Eg calucateCartPrice [return array]
+    function calculatePriceCart(...num1)
+    {
+            return num1
+    }
+    
+    console.log(calculatePriceCart(200,300,400,500))
+    Answer=> [200,300,400,500]
+
+23. Read about Rest vs Spread operator
+
+24.Scope in windows and node is different

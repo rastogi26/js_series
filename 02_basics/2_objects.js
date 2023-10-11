@@ -97,4 +97,22 @@ const users =[
 // console.log(Object.values(tinderUser));
 // console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+
+
+//destructing
+
+const course ={
+    name: "hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+
+// course.courseInstructor
+
+//easier method to access
+const {courseInstructor: instruct} = course
+
+// console.log(courseInstructor);
+console.log(instruct);
