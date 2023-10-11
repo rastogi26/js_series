@@ -27,21 +27,24 @@ function one() {
 
 one()
 
-//**************intersesting */
-
+//**************intersesting ******************/
 
 //method1
-
 console.log(addOne(5))
 function addOne(num) {
     return num+1
 }
 
 //method 2
+
 //hosting
 // console.log(addTwo(9));  //gives err
+
 const addTwo = function(num) {
     return num+2
 }
 
+
 console.log(addTwo(9));
+
+// 
