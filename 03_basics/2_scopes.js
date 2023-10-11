@@ -47,4 +47,4 @@ const addTwo = function(num) {
 
 console.log(addTwo(9));
 
-// 
+//
