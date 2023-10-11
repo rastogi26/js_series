@@ -33,4 +33,68 @@ jsUser.greeting = function() {
     console.log(`Namaste ${this["full name"]}`);
 }
 
-console.log(jsUser.greeting())
+// console.log(jsUser.greeting())
+
+
+//constructor
+
+// const tinderUser = new Object()
+
+const tinderUser = {}
+
+tinderUser.id ="123"
+tinderUser.name ="sam"
+tinderUser.isLoggedIn = false
+
+// console.log(tinderUser);
+
+const regularUser ={
+    email: "123@gmail.com",
+    fullName: {
+        userFullName:{
+            firstName: "Dhruv",
+            lastName: "Rastogi"
+        }
+    }
+}
+
+// console.log(regularUser.fullName.userFullName.firstName);
+
+const obj1 = {1:"a",2:"b"}
+const obj2 = {3:"a",4:"b"}
+
+
+// const object3 ={obj1,obj2}
+// const obj3 = Object.assign({},obj1,obj2)
+
+const obj3 = {...obj1,...obj2}
+// console.log(obj3);
+
+// console.log(object3);
+
+
+//database
+const users =[
+    {
+        id:"123",
+        name:"dhruv",
+    },
+    {
+        id:"123",
+        name:"dhruv",
+    }, 
+    {
+        id:"123",
+        name:"dhruv",
+    },
+]
+
+
+// console.log(users[1].name);
+
+
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
+
+console.log(tinderUser.hasOwnProperty("isLoggedIn"));

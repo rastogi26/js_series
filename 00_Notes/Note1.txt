@@ -92,4 +92,9 @@ answer => B [0,4,5]
      2. Constructor :- In this there is formation of singleton.
 
 
+21. Important functions :-
+    1.console.log(Object.keys(tinderUser));  //gives array of keys of object tinderUser
+    2.console.log(Object.values(tinderUser));//gives array of values of object tinderUser
+    3.console.log(Object.entries(tinderUser)); //gives array of key value  
+
 
