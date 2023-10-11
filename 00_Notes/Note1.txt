@@ -53,6 +53,8 @@
 
     console.log(Math.floor(Math.random()*(max-min+1))+min);
 
+********************ARRAYS START *****************************
+
 16. Arrays in js always create Shallow Copies. 
     
    Shallow Copies of the object is a copy whose properties share the same references as those of the source object from which the copy was made.
@@ -74,6 +76,20 @@ splice(1,3)
 
 answer => B [0,4,5]
           [1,2,3]
+
+
+19. Some operations are :- join,shift,unshift,push,concat,spreadOut,flat,from,of
+
+
+*****************************ARRAYS END*****************************************
+
+
+*****************************OBJECTS START***************************************
+
+20.  We can declare objects in 2 ways:-
+     
+     1. Literals :- In this there is no formation of singleton.
+     2. Constructor :- In this there is formation of singleton.
 
 
 
