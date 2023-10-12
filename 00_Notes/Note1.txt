@@ -114,4 +114,15 @@ answer => B [0,4,5]
 
 23. Read about Rest vs Spread operator
 
-24.Scope in windows and node is different
+24.Scope in windows and node is different.
+   In browser the global object is window and in node is empty object.
+
+25. this helps to refer to current context.
+
+26. we can use ""this"" only in objects but not in functions , in functions it gives undefined.
+
+27. Differece between arrow and normal function
+
+28.//implicit return
+   // const addTwo = (num1,num2) =>(num1+num2)
+   const objectReturn = () =>({username:"dhruv"})
