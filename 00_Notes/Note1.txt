@@ -126,3 +126,57 @@ answer => B [0,4,5]
 28.//implicit return
    // const addTwo = (num1,num2) =>(num1+num2)
    const objectReturn = () =>({username:"dhruv"})
+
+
+29. Immediately Invoked Function Expressions(IIFE)
+    // (function)(execution)
+    2 reason :- 
+    A. function that executes immediately.
+    B. sometimes there is problem with global scope pollution, so to remove global scope variables or declarion pollution we use iife.
+
+   Remember to stop the IIFE function by using ";" else it will give error.
+   (See the code part also.) 
+
+*****************************************Funtions End****************************************
+
+######################################## Javascript Execution Context Starts #######################
+
+30. Types of Execution Context:- 
+    A. Global EC
+    B. Function EC
+    C. Eval EC (MONGOOSE)
+
+31. JS is single threaded.
+
+32. Global EC in browser , have "this" value is window object and in node it is empty{}.
+
+33.  Javascript Execution Context => How file runs/executes in JS.
+     
+Steps/Process => 
+     1. File convert it into Global EC and it referes to a variable "this".
+     2. Memory Creation Phase:- In this whatever you have declare like variables etc only Memory is allocated.
+     3. Execution Creation Phase:- In this all the mathematical calculation and logics are implemented. If there is a function,
+        then it creates new EC and it contains two things i.e new variable environment + execution thread and then TWO phases again executes ie MemoryPhase and Execute Phase.
+
+    See Fig2_jsEC.
+
+34. Call Stack = LIFO
+
+######################################## Javascript Execution Context Ends #######################
+
+35. Falsy values => false, 0 , BigInt 0n, NaN , undefined , -0.
+    Truthy values => "0" , "false", " "(space),[],{},function(){}  empty function
+
+36. How to check is object is empty ?
+    if(Object.keys(myObjt).length===0){console.log("Object is empty)}
+
+37. Nullish Coalescing operator (??) : null  undefined
+
+38. Terniary operator =>  condition ? true:false
+
+39.
+
+
+     
+
+
