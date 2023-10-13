@@ -178,7 +178,9 @@ Steps/Process =>
     for of   =>     it works for ARRAY and MAP[ key, value] but not works on OBJECT.
     for each =>     it works for ARRAY, OBJECT and MAP.
 
-40.
+40. for each always return undefined.
+
+41.
 
 
 
