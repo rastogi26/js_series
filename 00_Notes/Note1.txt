@@ -180,7 +180,15 @@ Steps/Process =>
 
 40. for each always return undefined.
 
-41.
+41. innerText = only display the text which is visible.
+    textContent = it displays the whole content, even hidden by the css.
+    innerHtml = it gives content + the html in it. Eg= 'dom learning <span style="display: none;">test text</span>'
+
+
+42. NodeList = we can do foreach but not maps . To do so convert NodeList INTO ARRAY .
+    
+43. HTMLCollection = can not do any loop operations. To do so convert it into array  using "from".
+    EG= Array.from(tempClassList)
 
 
 
