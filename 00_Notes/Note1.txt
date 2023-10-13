@@ -174,7 +174,12 @@ Steps/Process =>
 
 38. Terniary operator =>  condition ? true:false
 
-39.
+39. for in   =>     it works for ARRAY and OBJECT but not works on MAP
+    for of   =>     it works for ARRAY and MAP[ key, value] but not works on OBJECT.
+    for each =>     it works for ARRAY, OBJECT and MAP.
+
+40.
+
 
 
      
