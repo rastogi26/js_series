@@ -191,6 +191,8 @@ Steps/Process =>
     EG= Array.from(tempClassList)
 
 
+44. Dont use innerHTML because it traverse the whole tree , instead use appendChild(createTextNode()) it is optimized apporach and it it help in bigger projects.
+
 
      
 
