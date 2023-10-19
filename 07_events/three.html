@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+    let intervalID
+    
+    const sayDate = function(str){
+        console.log(str, Date.now());
+    }
+
+    const start = function () {
+        intervalID= setInterval(sayDate, 1000, "hi")
+    }
+    const stop = function () {
+        
+         clearInterval(intervalID)
+        
+    }
+    const startButton = document.querySelector('#start')
+    startButton.addEventListener('click',start)
+
+    const stopButton = document.querySelector('#stop')
+    stopButton.addEventListener('click',stop)
+
+
+
+</script>
+</html>
