@@ -194,6 +194,41 @@ Steps/Process =>
 44. Dont use innerHTML because it traverse the whole tree , instead use appendChild(createTextNode()) it is optimized apporach and it it help in bigger projects.
 
 
+
+//////////////////////// EVENTS START //////////////////////////
+
+45.  document.getElementById('images').addEventListener('click', function(e){}, false)
+     
+     event lister takes 3 parametes , and by default 3rd parameter is false
+
+46. Read about these events :- 
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+
+47. Event Propagation = has 2 context :- 
+        
+        1. Event Bubbling (false) moves from bottom to up
+        2. Event Capturing (true) moves from top to bottom
+    
+    Basically it depends upon the your use case.
+
+48. e.stopPropagation() = when use ony execute bottom and not goes to up in case of bubbling and vica- vera in capturing.
+
+49. e.preventDefault();
+
+//////////////////////// EVENTS ENDS //////////////////////////
+
+
+
+************************ Async starts *********************
+50.  See fig 3,4,5
+
+51.
+
+
      
 
 
