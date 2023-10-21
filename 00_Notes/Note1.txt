@@ -225,8 +225,13 @@ Steps/Process =>
 
 ************************ Async starts *********************
 50.  See fig 3,4,5
+************************ Async ends********************
 
-51.
+51.  Fetch()  :-
+
+     1. Fetch returns promise.
+     2. Fetch request promise and get Http error like 404 so it will give as response not reject/error.
+     3. See fig 5 and 6.
 
 
      
