@@ -1,0 +1,239 @@
+1. Var:- Not to use var because of issue in block scope and functional scope.
+2. let accountState; :- It gives undefined by default.
+3. "use strict";  :- treat all the code of js as newer version
+4. type of undefined = undefined
+5. type of null = object
+
+6. //conversion of __ into number (type always number but value changes)
+  
+  if null =>  value is 0
+  if string like "33abc", "dhruv" => value is NaN
+  if undefined => value is NaN
+  if true => 1 and false => 0
+
+7. // conversion of __ into bool  (type remains boolean but value changes)
+
+   if 1 => value is true (similarly of false => 0)
+   if "" => value is false
+   if "dhruv" => value is true
+
+8. The equality check == and comparison > < >= <= work different,  
+   hence comaprision convert null to number , treating it as 0
+   that why null>=0 is true and null == 0 is false
+
+9. === strict equality , also check the dataType "2"===2 (false)
+
+10. 2 types of dataTypeS :- 
+     
+    1. Primitive(send copy of variable) => 7 types :- String,boolean,number,symbol,null,undefined,bigInt
+
+    2. Non-Primitive(Reference) => Array, functions, objects
+                
+11. Memory 2 types:- (Fig1_Memory)
+  
+    1.Stack(Primitive)
+    2.Heap(Non-Primitive)   
+  
+12. Use new method called The string interpolation. `${}`
+    It is a great feature. It helps in inserting values into string literals. It makes code more readable and avoids clumsiness.
+
+13. //2nd way to initialize the string 
+         
+         const gameName= new String("dhruv");
+         gameName
+
+    It gives object.
+
+14. console.log(balance.toFixed(2)); //precision value
+
+15. Generate random value between a range => 
+     
+    const min =10
+    const max = 20
+
+    console.log(Math.floor(Math.random()*(max-min+1))+min);
+
+********************ARRAYS START *****************************
+
+16. Arrays in js always create Shallow Copies. 
+    
+   Shallow Copies of the object is a copy whose properties share the same references as those of the source object from which the copy was made.
+
+17. Deep copy of the object is a copy whose properties do not share the same references as those of the source object from which the copy was made.
+
+18. Slice and Splice Differece
+In slice it gives the defined range value 
+
+
+But in Splice the  ranged array is cut from array.
+
+A [0,1,2,3,4,5]
+slice(1,3)
+answer=> [1,2]
+
+B [0,1,2,3,4,5]
+splice(1,3)
+
+answer => B [0,4,5]
+          [1,2,3]
+
+
+19. Some operations are :- join,shift,unshift,push,concat,spreadOut,flat,from,of
+
+
+*****************************ARRAYS END*****************************************
+
+
+*****************************OBJECTS START***************************************
+
+20.  We can declare objects in 2 ways:-
+     
+     1. Literals :- In this there is no formation of singleton.
+     2. Constructor :- In this there is formation of singleton.
+
+
+21. Important functions :-
+    1.console.log(Object.keys(tinderUser));  //gives array of keys of object tinderUser
+    2.console.log(Object.values(tinderUser));//gives array of values of object tinderUser
+    3.console.log(Object.entries(tinderUser)); //gives array of key value  
+
+*****************************OBJECTS END***************************************
+
+*****************************Functions Start***************************************
+
+22. Rest operator in function  => helps to pass multiple values in a function. 
+    
+    Eg calucateCartPrice [return array]
+    function calculatePriceCart(...num1)
+    {
+            return num1
+    }
+    
+    console.log(calculatePriceCart(200,300,400,500))
+    Answer=> [200,300,400,500]
+
+23. Read about Rest vs Spread operator
+
+24.Scope in windows and node is different.
+   In browser the global object is window and in node is empty object.
+
+25. this helps to refer to current context.
+
+26. we can use ""this"" only in objects but not in functions , in functions it gives undefined.
+
+27. Differece between arrow and normal function
+
+28.//implicit return
+   // const addTwo = (num1,num2) =>(num1+num2)
+   const objectReturn = () =>({username:"dhruv"})
+
+
+29. Immediately Invoked Function Expressions(IIFE)
+    // (function)(execution)
+    2 reason :- 
+    A. function that executes immediately.
+    B. sometimes there is problem with global scope pollution, so to remove global scope variables or declarion pollution we use iife.
+
+   Remember to stop the IIFE function by using ";" else it will give error.
+   (See the code part also.) 
+
+*****************************************Funtions End****************************************
+
+######################################## Javascript Execution Context Starts #######################
+
+30. Types of Execution Context:- 
+    A. Global EC
+    B. Function EC
+    C. Eval EC (MONGOOSE)
+
+31. JS is single threaded.
+
+32. Global EC in browser , have "this" value is window object and in node it is empty{}.
+
+33.  Javascript Execution Context => How file runs/executes in JS.
+     
+Steps/Process => 
+     1. File convert it into Global EC and it referes to a variable "this".
+     2. Memory Creation Phase:- In this whatever you have declare like variables etc only Memory is allocated.
+     3. Execution Creation Phase:- In this all the mathematical calculation and logics are implemented. If there is a function,
+        then it creates new EC and it contains two things i.e new variable environment + execution thread and then TWO phases again executes ie MemoryPhase and Execute Phase.
+
+    See Fig2_jsEC.
+
+34. Call Stack = LIFO
+
+######################################## Javascript Execution Context Ends #######################
+
+35. Falsy values => false, 0 , BigInt 0n, NaN , undefined , -0.
+    Truthy values => "0" , "false", " "(space),[],{},function(){}  empty function
+
+36. How to check is object is empty ?
+    if(Object.keys(myObjt).length===0){console.log("Object is empty)}
+
+37. Nullish Coalescing operator (??) : null  undefined
+
+38. Terniary operator =>  condition ? true:false
+
+39. for in   =>     it works for ARRAY and OBJECT but not works on MAP
+    for of   =>     it works for ARRAY and MAP[ key, value] but not works on OBJECT.
+    for each =>     it works for ARRAY, OBJECT and MAP.
+
+40. for each always return undefined.
+
+41. innerText = only display the text which is visible.
+    textContent = it displays the whole content, even hidden by the css.
+    innerHtml = it gives content + the html in it. Eg= 'dom learning <span style="display: none;">test text</span>'
+
+
+42. NodeList = we can do foreach but not maps . To do so convert NodeList INTO ARRAY .
+    
+43. HTMLCollection = can not do any loop operations. To do so convert it into array  using "from".
+    EG= Array.from(tempClassList)
+
+
+44. Dont use innerHTML because it traverse the whole tree , instead use appendChild(createTextNode()) it is optimized apporach and it it help in bigger projects.
+
+
+
+//////////////////////// EVENTS START //////////////////////////
+
+45.  document.getElementById('images').addEventListener('click', function(e){}, false)
+     
+     event lister takes 3 parametes , and by default 3rd parameter is false
+
+46. Read about these events :- 
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+
+47. Event Propagation = has 2 context :- 
+        
+        1. Event Bubbling (false) moves from bottom to up
+        2. Event Capturing (true) moves from top to bottom
+    
+    Basically it depends upon the your use case.
+
+48. e.stopPropagation() = when use ony execute bottom and not goes to up in case of bubbling and vica- vera in capturing.
+
+49. e.preventDefault();
+
+//////////////////////// EVENTS ENDS //////////////////////////
+
+
+
+************************ Async starts *********************
+50.  See fig 3,4,5
+************************ Async ends********************
+
+51.  Fetch()  :-
+
+     1. Fetch returns promise.
+     2. Fetch request promise and get Http error like 404 so it will give as response not reject/error.
+     3. See fig 5 and 6.
+
+
+     
+
+
