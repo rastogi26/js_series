@@ -233,6 +233,13 @@ Steps/Process =>
      2. Fetch request promise and get Http error like 404 so it will give as response not reject/error.
      3. See fig 5 and 6.
 
+***************** OOPS starts **************************
+
+52.  new :-  Step 1. Creates empty object called instance. (new object created)
+             Step 2. Constructor function calls due to new keyword, gives all the arguments.
+             Step 3. All the arguments injects in this
+             Step 4. Gives in function.
+
 
      
 
