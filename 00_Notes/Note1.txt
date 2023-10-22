@@ -257,6 +257,8 @@ Steps/Process =>
                                If no explicit return value is specified from the constructor, JavaScript assumes this, the newly created object, to be the intended return value.
 
 
-56.  
+56.   Question - can we change the value of pi ? why or why not. ANS :- NO , refer to 9th folder - mathpi.js
+
+
 
 
