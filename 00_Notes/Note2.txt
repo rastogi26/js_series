@@ -1,0 +1,72 @@
+************************* Advanced Array Theory ****************************
+
+1. Two types of array in js = A) Continous/Packed   B)Holey
+
+2. These arrays can contain three types of elements: SMI (Small Integer), Packed Element, and Double.
+
+3. const arr = [1,2,3,,5] = called Holey array
+
+4. const arr [1,2,3,4,5] = called packed array
+
+5. const arrTwo =[1,2,3,4,5] 
+   It is Packed_SMI_Elements - best type of array and optimized but in this array will contain only and only numbers even decimacls not allowed.
+
+6. arrTwo.push(6.0)
+   It is Packed_Double_Elements
+
+7. arrTwo.push("7")  //string
+   It is Packed_Elements
+
+8. When smi converted to double then reverse is not allowed . Same with packed_element.
+
+9. arrTwo[10]=11  
+   It is now Holey_Elements = have different types(numerical,string,decimal) and also holes in it.
+
+10. Q:- Now if we want to access arrTwo[9] value which is empty/hole , It performs these steps:-
+        
+        Step 1. bound check  //which is true
+        Step 2. hasOwnProperty(arrTwo,9)       //which is false
+        Step 3. hasOwnProperty(arrTwo.prototype,9)  //which is false
+        Step 4. hasOwnProperty(Object.prototype,9)  //which is false
+
+    Hence holy array are not optimised because holes are very expensive in js as it performs all 4 steps,
+    while if not holes present it performs only first 2 steps.
+
+11. Optimized order = continous > Holey
+
+12. Optimized order in continous = SMI>DOUBLE>PACKED
+
+13. Optimized order in packed = H_SMI> H_Double > H_packed
+
+14. packed is general term means it contains all types.
+
+15. If it moves in drowngrade state it will never go back to original even delete it .
+    Eg:- removes element from array , there will be a hole and neveer go back to packed.
+
+16. const arrFour = new Array(3)
+    // just 3 holes. HOLEY_SMI_ELEMENTS
+
+    arrFour[0] = '1' //HOLEY_ELEMENTS
+    arrFour[1] = '2' //HOLEY_ELEMENTS
+    arrFour[2] = '3' //HOLEY_ELEMENTS
+
+17. Optimized approach of above :- 
+    
+    const arrFive = []  //smi
+    arrFive.push('1') // Packed_Elements
+    arrFive.push('2') // Packed_Elements
+    arrFive.push('3') // Packed_Elements
+
+    
+18. const arrSix = [1,2,3,4,5]
+
+    if we add any two below statement it becomes Packed_Double
+
+    1. arrSix.push(NAN)
+    2. arrSix.push(infinity)
+
+19. for, for-of,forEach
+
+20. const arr= []
+    %DebugPrint(myArr)
+
