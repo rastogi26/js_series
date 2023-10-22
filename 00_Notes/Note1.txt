@@ -259,6 +259,6 @@ Steps/Process =>
 
 56.   Question - can we change the value of pi ? why or why not. ANS :- NO , refer to 9th folder - mathpi.js
 
-
+57. closure gives/returns whole lexical scope
 
 
