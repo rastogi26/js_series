@@ -1,3 +1,14 @@
+
+
+Imp :- // these are Same notes as Notes2.md but in txt from
+
+
+
+
+
+
+
+
 ************************* Advanced Array Theory ****************************
 
 1. Two types of array in js = A) Continous/Packed   B)Holey
